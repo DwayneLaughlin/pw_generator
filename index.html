@@ -11,41 +11,20 @@
     <title>PASSWORD GENERATOR</title>
 </head>
 <body>
-    <script>
-        var letterList = ['a','A','b','B','C','c','d','D','e','E','f','F','g','G','h','H','i','I','j','J','k','K','l','L','m','M','n','N','o','O','p','P','q','Q','r','R','s','S','t','T','u','U','v','V','w','W','x','X','y','Y','z','Z'];
-
-        var numberList = ['1','2','3','4','5','6','7','8','9','0'
-        ];
-
-        var specialList = ['!','@','#','$','%','^','&','*','(',')','[',']','{','}','~','`'];
-        
-        
-        var randomLetter = letterList [Math.floor(Math.random() * letterList.length)];
-
-        var randomNumber = numberList [Math.floor(Math.random() * numberList.length)];
-
-        var randomSpecial = specialList [Math.floor(Math.random() * specialList.length)];
-
-        var i;
-        for (i = 0; i < letterList.length; i++) {
-         console.log(randomLetter);  
-        }
-
-    
-        console.log(randomLetter);
-        console.log("-----------");
-        console.log(randomNumber);
-        console.log("-----------");
-        console.log(randomSpecial);
-        console.log("-----------");
-        console.log(i)
-
-
-    </script>
-    <form>
-        <input 
-        <button type="button">Generate</button>
-        <button type="button">Copy</button>
-    </form>
+   <div class="container">
+       <div class="row">
+           <input class="col-md-8" type="number" id="numLength" min="8" max="128">How many characters would you like?
+           <input class="col-md-2" type="checkbox" id="numberCheck">Numbers?
+           <input class="col-md-2" type="checkbox" id="specialCheck">Special Characters?
+       </div>
+       <div class="row">
+        <button type="button" id="passButton" class="col-md-4">Get Password</button>
+        <button type="button" id="copyButton" class="col-md-4">Copy to Clipboard</button>
+        <input size="50" type="text" id="passResult" class="col-md-4">
+       </div>
+   </div>
+   
+    <script src="app.js"></script> 
 </body>
+    
 </html>
