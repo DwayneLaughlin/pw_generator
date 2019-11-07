@@ -11,9 +11,12 @@
 }
 
 .bodyz{
-    background-color: blue;
+    background-color: lightgoldenrodyellow;
 }
 
 .wordz{
     font-size: 20px;
+}
+.topline{
+    text-align: center; 
 }
